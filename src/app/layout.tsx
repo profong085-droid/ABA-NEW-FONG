@@ -15,7 +15,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "ABA Mobile Banking",
   description: "ABA Mobile Banking App - Secure and convenient banking at your fingertips",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

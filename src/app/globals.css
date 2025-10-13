@@ -1,4 +1,5 @@
 @import "tailwindcss";
+/* @import "./../styles/responsive.css"; */ /* Removed import of non-existent file */
 
 :root {
   --background: #0f2942;
@@ -21,6 +22,24 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* Enhanced mobile touch targets */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Safe area insets for mobile devices */
+.safe-area-pb {
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 /* Mobile-first responsive container */
@@ -64,4 +83,3 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.3);
 }
-
