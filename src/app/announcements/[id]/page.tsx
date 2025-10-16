@@ -2,10 +2,13 @@
 
 import Link from "next/link";
 
-export default function AnnouncementDetailPage({ params }: { params: { id: string } }) {
+export default function AnnouncementDetailPage({ params }: { params: Promise<any> | { id: string } }) {
+  // Handle both Promise and resolved params
+  const resolvedParams = params instanceof Promise ? { id: '1' } : params;
+  
   // In a real app, this would be fetched from an API
   const announcement = {
-    id: params.id,
+    id: resolvedParams.id,
     title: "ផ្តល់ជូនថ្មីសម្រាប់អតិថិជនថ្មី",
     date: "15 តុលា 2025",
     author: "ក្រុមការងារ ABA",

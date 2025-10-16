@@ -1,11 +1,8 @@
 'use client';
 
 import Link from "next/link";
-import { useState } from "react";
 
 export default function LandingPage() {
-  const [isHovered, setIsHovered] = useState(false);
-  
   return (
     <div className="min-h-screen bg-black text-white font-sans flex flex-col">
       {/* Header */}

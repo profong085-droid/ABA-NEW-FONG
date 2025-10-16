@@ -2,6 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function ScanQRPage() {
   const router = useRouter();
@@ -49,10 +50,12 @@ export default function ScanQRPage() {
                 
                 <div className="relative group">
                   <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full overflow-hidden border-2 border-cyan-300 shadow-lg shadow-cyan-400/30 transition-all duration-300 group-hover:shadow-cyan-400/50 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 backdrop-blur-sm">
-                    <img 
+                    <Image 
                       src="https://i.pinimg.com/1200x/98/89/7c/98897c54cfc34fc4abc64fdcd025336a.jpg" 
                       alt="Profile" 
                       className="w-full h-full object-cover"
+                      width={48}
+                      height={48}
                     />
                   </div>
                   <div className="absolute -bottom-0.5 -right-0.5 w-2 h-2 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 bg-green-400 rounded-full border border-white shadow-sm"></div>
@@ -62,7 +65,7 @@ export default function ScanQRPage() {
           </div>
           
           {/* Decorative bottom border with enhanced gradient */}
-          <div className="h-1 bg-gradient-to-r from-cyan-500/30 via-blue-500/30 to-cyan-500/30 animate-pulse"></div>
+          <div className="h-1 bg-gradient-to-r from-cyan-500/30 via-blue-500/30 to-cink-500/30 animate-pulse"></div>
         </header>
 
         {/* Scanner Area */}

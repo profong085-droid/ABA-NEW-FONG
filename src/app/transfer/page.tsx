@@ -1,10 +1,8 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 export default function TransferPage() {
-  const router = useRouter();
   const [amount, setAmount] = useState('');
   const [recipient, setRecipient] = useState('');
   const [note, setNote] = useState('');

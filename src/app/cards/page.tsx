@@ -1,10 +1,8 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 export default function CardsPage() {
-  const router = useRouter();
   const [cards] = useState([
     { id: 1, name: 'Primary Card', number: '**** **** **** 1234', type: 'Visa', expiry: '12/25', balance: 1250.75 },
     { id: 2, name: 'Savings Card', number: '**** **** **** 5678', type: 'Mastercard', expiry: '08/24', balance: 5420.30 },
